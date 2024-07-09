@@ -46,7 +46,7 @@ button {
 /* ------------------- End of Utility Classes ------------------- */
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +56,13 @@ body {
   text-align: start;
   color: white;
   background-color: #23252c;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 24rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .hero-img {
@@ -66,9 +72,8 @@ body {
 }
 
 .info {
-  max-width: 24rem;
   background-color: #1a1b21;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
 }
 
 .info-hero {
@@ -205,4 +210,10 @@ body {
 
 .social-icon-wrapper:hover .social-icon {
   fill: #1a1b21;
+}
+
+@media (min-width: 24rem) {
+  .buttons-wrapper {
+    justify-content: space-between;
+  }
 }
